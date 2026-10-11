@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="M'man Trop Fê — cuisine ivoirienne, plats à 1 000 FCFA. Commandez par WhatsApp ou téléphone.">
+  <title>M'man Trop Fê | Cuisine ivoirienne</title>
+  <style>
+    :root{--green:#c65312;--gold:#ffb02e;--cream:#fff3e5;--ink:#242424;--muted:#686868;--orange-dark:#8f3108}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fffdf8;line-height:1.6}
+    header{background:linear-gradient(135deg,#8f3108,#e66b16,var(--green));color:white;text-align:center;padding:34px 18px 42px}
+    .logo{width:94px;height:94px;margin:0 auto 12px;border:3px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;background:#fff8e9;color:var(--orange-dark);font-size:28px;font-weight:900;letter-spacing:1px}
+    header h1{margin:0;font-size:clamp(2rem,6vw,3.2rem);line-height:1.15}
+    header p{margin:10px auto 0;max-width:600px;color:#fff4d5}
+    .topline{display:inline-block;margin-top:18px;padding:7px 15px;border-radius:999px;background:var(--gold);color:#28200b;font-weight:bold}
+    main{width:min(1000px,92%);margin:0 auto;padding:30px 0 42px}
+    .intro{text-align:center;margin-bottom:28px}
+    .intro h2,.menu-title{color:var(--orange-dark);margin:0 0 8px}
+    .hours{display:inline-block;background:var(--cream);border:1px solid #f0dfb7;padding:10px 16px;border-radius:12px;font-weight:bold}
+    .menu-title{text-align:center;margin:30px 0 18px;font-size:1.8rem}
+    .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+    .dish{background:white;border:1px solid #eadfc9;border-radius:16px;padding:21px;box-shadow:0 5px 18px #2b220b0b;display:flex;flex-direction:column}
+    .dish h3{color:var(--orange-dark);font-size:1.25rem;margin:0 0 8px}
+    .dish p{margin:0 0 12px;color:var(--muted);flex:1}
+    .price{font-size:1.35rem;font-weight:800;color:#a45d00;margin:3px 0 15px}
+    .order{display:block;text-align:center;text-decoration:none;background:#d9570d;color:white;font-weight:bold;padding:11px 14px;border-radius:9px}
+    .order:hover{background:#a83c08}
+    .special{border:2px solid var(--gold);background:#fffaf0}
+    .tag{display:inline-block;align-self:flex-start;background:#ffe8a8;color:#5b4100;font-size:.78rem;font-weight:bold;padding:3px 9px;border-radius:999px;margin-bottom:9px}
+    .contact{margin-top:30px;text-align:center;background:var(--cream);padding:24px 18px;border-radius:16px}
+    .contact h2{margin:0 0 6px;color:var(--orange-dark)}
+    .contact p{margin:5px 0}
+    .contact-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:15px}
+    .contact-actions a{padding:11px 17px;border-radius:9px;text-decoration:none;font-weight:bold;background:#d9570d;color:white}
+    .contact-actions a.phone{background:#333}
+    footer{text-align:center;padding:18px;background:#702707;color:#fff3e5;font-size:.9rem}
+    @media(max-width:480px){header{padding-top:26px}.dish{padding:18px}main{width:90%}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" aria-label="Logo M'man Trop Fê">MTF</div>
+    <h1>M'man Trop Fê</h1>
+    <p>Les saveurs de chez nous, préparées avec amour.</p>
+    <span class="topline">Tous les plats à 1 000 FCFA</span>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="infos">
+      <h2 id="infos">Bienvenue chez M'man Trop Fê</h2>
+      <p>Retrouvez vos plats ivoiriens préférés et passez votre commande simplement par WhatsApp ou par téléphone.</p>
+      <div class="hours">🕗 Du lundi au vendredi · 8 h à 19 h</div>
+    </section>
+
+    <h2 class="menu-title">Notre menu</h2>
+    <section class="menu" aria-label="Menu et tarifs">
+      <article class="dish">
+        <h3>Placali</h3>
+        <p>Accompagné de sauce graine ou de sauce gombo (côpê).</p>
+        <div class="price">1 000 FCFA</div>
+        <a class="order" href="https://wa.me/2250747296132?text=Bonjour%20M%27man%20Trop%20F%C3%AA%2C%20je%20voudrais%20commander%20un%20placali%20%C3%A0%201000%20FCFA." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      </article>
+      <article class="dish">
+        <h3>Riz et sauce</h3>
+        <p>Au choix : sauce aubergine, sauce graine, sauce arachide ou sauce djoungblé.</p>
+        <div class="price">1 000 FCFA</div>
+        <a class="order" href="https://wa.me/2250747296132?text=Bonjour%20M%27man%20Trop%20F%C3%AA%2C%20je%20voudrais%20commander%20un%20riz%20et%20sauce%20%C3%A0%201000%20FCFA.%20Je%20pr%C3%A9cise%20la%20sauce%20de%20mon%20choix%20dans%20mon%20message." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      </article>
+      <article class="dish">
+        <h3>Foutou</h3>
+        <p>Accompagné de la sauce de votre choix, selon les disponibilités.</p>
+        <div class="price">1 000 FCFA</div>
+        <a class="order" href="https://wa.me/2250747296132?text=Bonjour%20M%27man%20Trop%20F%C3%AA%2C%20je%20voudrais%20commander%20un%20foutou%20%C3%A0%201000%20FCFA.%20Je%20vous%20pr%C3%A9cise%20la%20sauce%20souhait%C3%A9e%20dans%20mon%20message." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      </article>
+      <article class="dish special">
+        <span class="tag">Spécial du vendredi</span>
+        <h3>Tchêpe</h3>
+        <p>Le plat spécial du vendredi.</p>
+        <div class="price">1 000 FCFA</div>
+        <a class="order" href="https://wa.me/2250747296132?text=Bonjour%20M%27man%20Trop%20F%C3%AA%2C%20je%20voudrais%20commander%20le%20tch%C3%AApe%20du%20vendredi%20%C3%A0%201000%20FCFA." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      </article>
+      <article class="dish special">
+        <span class="tag">Spécial du vendredi</span>
+        <h3>Foutou du vendredi</h3>
+        <p>Un autre choix pour se régaler le vendredi.</p>
+        <div class="price">1 000 FCFA</div>
+        <a class="order" href="https://wa.me/2250747296132?text=Bonjour%20M%27man%20Trop%20F%C3%AA%2C%20je%20voudrais%20commander%20le%20foutou%20du%20vendredi%20%C3%A0%201000%20FCFA." target="_blank" rel="noopener">Commander sur WhatsApp</a>
+      </article>
+    </section>
+
+    <section class="contact" id="lieu" style="margin-top:22px">
+      <h2>Où nous trouver ?</h2>
+      <p><strong>Adresse :</strong> Yopougon, Ananeraie, juste derrière la pharmacie Alicia.</p>
+      <div class="contact-actions">
+        <a href="https://www.google.com/maps/search/?api=1&query=Yopougon+Ananeraie+derri%C3%A8re+pharmacie+Alicia+Abidjan+C%C3%B4te+d%27Ivoire" target="_blank" rel="noopener">Voir l’itinéraire sur Google Maps</a>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact et commandes</h2>
+      <p><strong>Téléphone :</strong> 07 47 29 61 32</p>
+      <p>Pour commander, indiquez le plat souhaité et la sauce choisie, si nécessaire.</p>
+      <div class="contact-actions">
+        <a href="https://wa.me/2250747296132?text=Bonjour%20M%27man%20Trop%20F%C3%AA%2C%20je%20souhaite%20passer%20une%20commande." target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        <a class="phone" href="tel:+2250747296132">Appeler maintenant</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year">2026</span> M'man Trop Fê · Cuisine ivoirienne</footer>
+</body>
+</html>
